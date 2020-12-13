@@ -22,10 +22,15 @@ Text Domain:  accelerate-theme-child
 
 /* Blog Post on Homepage */
 
+.recent-posts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 .blog-post {
-	width: 50%;
-	float: left;
-	margin-bottom: 2em;
+  max-width: 400px;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 .blog-post h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
@@ -45,34 +50,26 @@ Text Domain:  accelerate-theme-child
 
 /* Featured Work on Homepage */
 
-.featured-work .site-content h4 {
-  margin: -3em 0 2em;
+.featured-work h4 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 1em;
 }
-ul.homepage-featured-work {
-  list-style-type: none;
-  display: flex;
-  margin: 1em;
+.featured-work ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
-li.individual-featured-work {
-  margin: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.featured-work li {
+    padding-right: 40px;
 }
-.individual-featured-work figure {
-  max-width: 250px;
-  height: 200px;
-}
-.individual-featured-work h3 {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0;
+.individual-featured-work h4 {
+  text-transform: none;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 600;
 }
 
-/* Case Studies */
+/* Case Studies on Homepage */
 
 aside.case-study-sidebar {
   float:left;
@@ -119,19 +116,23 @@ div.case-study-images img {
 
 /* social media menu */
 
-.social-media-menu {
-  list-style-type: none;
+.social-media-navigation ul {
+  list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
 }
-.social-media-menu li {
-  background-color: black;
+.social-media-navigation li a {
+  color: #ffffff;
+  border-radius: 50%
+}
+.social-media-navigation li {
+  background-color: #2b2d2f;
+  display: flex;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 35px;
-  color: white;
-  filter: brightness(100);
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }
