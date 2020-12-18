@@ -25,8 +25,8 @@ get_header(); ?>
           </div>
 
           <div class="services-icon">
-              <?php if($service_icon) {
-    				      echo wp_get_attachment_image( $service_icon, $size );
+            <?php if($service_icon) {
+    				  echo wp_get_attachment_image( $service_icon, $size );
             } ?>
     			</div>
         </article>

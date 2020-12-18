@@ -23,7 +23,9 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
+<!-- FEATURED WORK -->
 	<section class="featured-work">
+
 		<div class="site-content">
 			<h4>Featured Work</h4>
 
@@ -59,6 +61,20 @@ get_header(); ?>
 					<?php endwhile; // end of the loop ?>
 					<?php wp_reset_query(); // resets the altered query back to the original ?>
 			</div>
+		</div>
+	</section>
+
+	<!-- DYNAMIC SIDEBAR -->
+	<section class="recent-tweets">
+		<div class="tweet">
+			<h4>Recent Tweet</h4>
+			<h3>@Accelerate</h3>
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				<p class="read-more-link"><a href="http://www.twitter.com">Follow Us &rsaquo;</a></p>
+			</div>
+			<?php endif; ?>
 		</div>
 	</section>
 

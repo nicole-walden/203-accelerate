@@ -67,6 +67,33 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+/* Twitter Module */
+
+.recent-tweets {
+  width: 475px;
+  float: left;
+  padding-left: 100px;
+  }
+h3.widget-title {
+  display: none;
+}
+ul.tweets {
+  list-style: none;
+  margin: auto;
+}
+.tweet h4 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	color: #a6a6a6;
+	text-transform: uppercase;
+	margin: 2em 0 .5em;
+}
+.tweet h3 {
+	font-size: 1.5em;
+}
+.stt-em a {
+  display: none;
+}
+
 /* Case Studies */
 
 .case-study {
@@ -144,6 +171,15 @@ div.case-study-images img {
 }
 
 /* Services List */
+
+/* 404 Page */
+.error h1 {
+ text-align: center;
+ font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+.error a {
+  display: none;
+}
 
 /* Media Queries */
 @media (min-width: 768px) {
