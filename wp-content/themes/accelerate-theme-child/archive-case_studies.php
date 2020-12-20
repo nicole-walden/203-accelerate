@@ -19,7 +19,7 @@ get_header(); ?>
 	      $services = get_field('services');
 			?>
 
-      <article class="case-study clearfix">
+      <article class="case-study sidebar">
         <aside class="case-study-sidebar">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <h4><?php echo $services; ?></h4>
@@ -31,7 +31,7 @@ get_header(); ?>
   				<a href="<?php the_permalink(); ?>">
             <?php if($image_1) {
   				      echo wp_get_attachment_image( $image_1, $size );
-          } ?>
+          	} ?>
           </a>
   			</div>
       </article>
@@ -41,4 +41,4 @@ get_header(); ?>
     </div><!-- .main-content -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>
