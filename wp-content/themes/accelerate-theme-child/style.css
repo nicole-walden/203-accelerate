@@ -103,8 +103,7 @@ li.homepage-individual-services {
 }
 
 /* Homepage Twitter Module */
-
-.widget-title {
+#pi_simpletwittertweets-2 > h3 {
   display: none;
 }
 .stt-em a {
