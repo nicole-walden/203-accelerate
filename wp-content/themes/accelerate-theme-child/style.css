@@ -189,33 +189,42 @@ div.case-study-images img {
 
 /* About Page */
 
-.about {
-  width: 550px;
+div#primary.home-page.hero-content.about {
+  padding: 3em 0;
+}
+.about .main-content {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 960px;
   margin: auto;
+  padding: 0;
 }
 .about h3 {
+  font-size: 1.4em;
+  width: 55%;
   margin: auto;
 }
-.about-intro {
-  width: 550px;
-  margin: auto;
+.about-subheading {
+  width: 55%;
+  margin: 50px auto;
 }
-.about-intro h4 {
+.about-subheading h4 {
   text-align: center;
   text-transform: uppercase;
 }
-.about-intro p {
+.about-subheading p {
   text-align: center;
 }
-.about-services {
-  list-style: none;
-  margin: auto;
-}
-.individual-services {
+ul.about-services {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+}
+li.individual-services {
+  display: flex;
   justify-content: space-between;
-  margin: 50px 0 50px 0;
+  align-items: center;
+  margin: 50px 0;
 }
 .individual-services-icon {
   display: flex;
@@ -226,7 +235,7 @@ div.case-study-images img {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  max-width: 650px;
+  max-width: 66%;
   text-align: left;
 }
 .individual-services-text h3{
@@ -237,16 +246,22 @@ div.case-study-images img {
 }
 .individual-services:nth-child(even) {
   display: flex;
+  justify-content: space-between;
   flex-direction: row-reverse;
 }
 .contact-us-button {
   border-top: 1px solid #bfbfbf;
-  width: 960px;
-  margin: 100px auto 0;
+  width: 100%;
+  margin: 50px auto 0;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
   font-size: 1.2em;
+}
+.contact-us-button h2 {
+  margin: 2em .25em 1em;
+  line-height: 1;
+  text-align: center;
 }
 
 /* Blog Page */
@@ -270,7 +285,7 @@ div.case-study-images img {
 
 /* Media Queries */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 760px) {
   ul.homepage-featured-work {
     flex-direction: column;
     justify-content: center;
@@ -297,6 +312,29 @@ div.case-study-images img {
   }
   .blog-post h3 {
     margin: 0;
+  }
+  .about-subheading {
+    margin: auto;
+  }
+  li.individual-services {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  li.individual-services:nth-child(even) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .individual-services-text {
+    text-align: center;
+    align-self: center;
+  }
+  .individual-services-text h3{
+    margin: 20px auto 0;
+  }
+  .contact-us-button {
+    flex-wrap: wrap;
   }
   aside.case-study-sidebar {
    float: left;
