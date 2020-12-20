@@ -164,9 +164,9 @@ div.case-study-images img {
 
 /* Contact Us Page */
 
-.contact-us {
+.contact-us .main-content {
   width: 600px;
-  margin: auto;
+  margin: 0 auto;
 }
 .ninja-forms-req-symbol {
   display: none;
