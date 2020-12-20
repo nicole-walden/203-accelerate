@@ -13,7 +13,8 @@ Text Domain:  accelerate-theme-child
 /* Front Page Styles */
 
 .home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  margin: 0 0 3em;
 }
 #masthead {
   background: none repeat scroll 0 0 #45ac9d;
@@ -21,37 +22,71 @@ Text Domain:  accelerate-theme-child
 .button {
 	background: none repeat scroll 0 0 #45ac9d;
 }
+.site-content > h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2em auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
 
-/* Featured Work on Homepage */
+/* Homepage Featured Work */
 
 .featured-work .site-content {
-  margin: 6em auto;
+  margin: 60px auto 0;
 }
-.featured-work h4 {
-  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 2.25em;
+ul.homepage-featured-work {
+  display: flex;
+  justify-content: space-between;
 }
-.homepage-featured-work {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	width: 100%;
+li.individual-featured-work {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
 }
-.individual-featured-work {
-  margin-bottom: 2em;
-}
-.individual-featured-work a {
-	display: block;
-}
-.individual-featured-work h3 {
-  font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+.individual-featured-work > h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px auto;
+  font-size: 0.8em;
 }
 
-/* Blog Post on Homepage */
+/* Homepage Our Services */
 
+.our-services .site-content {
+  margin: 60px auto 0;
+}
+ul.homepage-our-services {
+  display: flex;
+  justify-content: space-between;
+}
+li.homepage-individual-services {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+}
+.homepage-individual-services > h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px auto;
+  font-size: 0.8em;
+}
+
+/* Recent Items */
+
+.recent-items .site-content {
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Homepage Blog Post */
+
+.blog-post {
+  flex: 0 1 47%;
+}
 .blog-post h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
@@ -67,34 +102,16 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
-/* Twitter Module */
+/* Homepage Twitter Module */
 
-.recent-tweets {
-  width: 475px;
-  float: left;
-  padding-left: 100px;
-  }
-h3.widget-title {
+.widget-title {
   display: none;
-}
-ul.tweets {
-  list-style: none;
-  margin: auto;
-}
-.tweet h4 {
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	color: #a6a6a6;
-	text-transform: uppercase;
-	margin: 2em 0 .5em;
-}
-.tweet h3 {
-	font-size: 1.5em;
 }
 .stt-em a {
   display: none;
 }
 
-/* Case Studies */
+/* Work Page Case Studies */
 
 .case-study {
     clear: both;
@@ -121,7 +138,7 @@ div.case-study-images img {
 	border: 1px solid #dddddd;
 }
 
-/* Social Media Menu */
+/* Footer Social Media Menu */
 
 .social-media-navigation ul {
   list-style: none;
@@ -170,7 +187,77 @@ div.case-study-images img {
   float: right;
 }
 
-/* Services List */
+/* About Page */
+
+.about {
+  width: 550px;
+  margin: auto;
+}
+.about h3 {
+  margin: auto;
+}
+.about-intro {
+  width: 550px;
+  margin: auto;
+}
+.about-intro h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-intro p {
+  text-align: center;
+}
+.about-services {
+  list-style: none;
+  margin: auto;
+}
+.individual-services {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 50px 0 50px 0;
+}
+.individual-services-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.individual-services-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 650px;
+  text-align: left;
+}
+.individual-services-text h3{
+  font-family: 'Open Sans';
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: auto 0;
+}
+.individual-services:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.contact-us-button {
+  border-top: 1px solid #bfbfbf;
+  width: 960px;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 1.2em;
+}
+
+/* Blog Page */
+
+#mc4wp-form-1 > div.mc4wp-form-fields > p:nth-child(2) > input[type=submit] {
+  background: #45ac9d;
+  padding: .5em 3.75em;
+}
+#sidebar .widget_search {
+  border-top: 1px solid #BFBFBF;
+}
 
 /* 404 Page */
 .error h1 {
@@ -182,20 +269,35 @@ div.case-study-images img {
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
-  .featured-work .site-content {
-    margin: auto auto 3em;
+
+@media screen and (max-width: 767px) {
+  ul.homepage-featured-work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .individual-featured-work {
-    float: left;
-    width: 33%;
-    padding: 0 .5em;
+  li.individual-featured-work {
+    width: auto;
+    align-items: center;
+  }
+  ul.homepage-our-services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li.homepage-individual-services {
+    width: auto;
+    align-items: center;
+  }
+  .recent-items .site-content {
+    flex-direction: column;
   }
   .blog-post {
-    width: 50%;
-    float: left;
-    margin-bottom: 2em;
-	}
+    margin-bottom: auto;
+  }
+  .blog-post h3 {
+    margin: 0;
+  }
   aside.case-study-sidebar {
    float: left;
    width: 34%;
