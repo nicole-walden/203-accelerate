@@ -110,34 +110,39 @@ li.homepage-individual-services {
   display: none;
 }
 
-/* Work Page Case Studies */
+/* Case Studies */
 
 aside.case-study-sidebar {
   float: left;
-  max-width: 300px;
-  margin: auto 30px auto 0;
+  width: 300px;
+  margin: 30px 20px 0 0;
 }
 div.case-study-images {
   float: left;
+  width: 600px;
 }
 div.case-study-images img {
   float: left;
-  width: 550px;
+  width: 600px;
 	margin: 40px auto;
 	border: 1px solid #dddddd;
 }
-.case-study h2 {
+.case-study-sidebar h2 {
   font: 700 1.5em/1.5 'Open Sans Semibold';
 }
-.case-study h4 {
+.case-study-sidebar h4 {
   font: 400 .875em/1.25 'Open Sans';
   margin: 1em 0;
 }
-.case-study h4 span {
-  color: #878787;
+.case-study-sidebar h6 {
+  font: 600 .875em/1.25 'Open Sans';
+  margin: 1em 0;
 }
 .case-study-sidebar p {
   margin: 1em auto;
+}
+.case-study-images a img {
+  margin-bottom: 80px;
 }
 
 /* Footer Social Media Menu */
@@ -346,8 +351,12 @@ li.individual-services {
   }
   aside.case-study-sidebar {
     width: 100%;
+    margin: auto;
   }
   div.case-study-images {
     width: 100%;
+  }
+  .case-study-images a img {
+    margin-bottom: 20px;
   }
 }

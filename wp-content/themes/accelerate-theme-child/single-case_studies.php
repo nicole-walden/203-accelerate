@@ -23,10 +23,10 @@ get_header(); ?>
 			$size = "full";
 		?>
 
-			<article class="case-study">
+			<article class="case-study sidebar">
 				<aside class="case-study-sidebar">
 					<h2><?php the_title(); ?></h2>
-					<h5><?php echo $services; ?></h5>
+					<h4><?php echo $services; ?></h4>
 					<h6>Client: <?php echo $client; ?></h6>
 					<?php the_content(); ?>
 					<p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site &rsaquo;</a></p>
